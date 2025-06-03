@@ -1,0 +1,87 @@
+body {
+    background: #1b4f43;
+    background: -webkit-linear-gradient(to right, rgb(35, 106, 81), rgba(37, 117, 252, 1));
+    background: linear-gradient(to right, rgba(35, 106, 81), rgba(37, 117, 252, 1));
+}
+.form-container {
+    height: 500px; /* Đặt chiều cao cố định cho vùng chứa */
+    overflow-y: auto; /* Kích hoạt thanh cuộn theo chiều dọc */
+    overflow-x: hidden; /* Ẩn thanh cuộn ngang nếu có */
+    padding: 15px;
+    border: 1px solid #ccc; /* Tùy chọn: Thêm viền để làm nổi bật vùng */
+    background-color: rgba(255, 255, 255, 0.1); /* Tùy chọn: Màu nền bán trong suốt */
+}
+#root {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /* Remove the outline from the video embed */
+        #root video {
+            outline: none;
+        }
+
+        /* Style the "Back to Dashboard" button */
+        .back-to-dashboard {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .back-to-dashboard button {
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Hide any content that overflows the viewport */
+        body {
+            overflow: hidden;
+        }
+        .create-meeting-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .button-container {
+            display: block;
+            gap: 20px;
+        }
+        
+        button a {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .create-meeting-btn {
+            background: #1e90ff;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+        
+        .join-meeting-btn {
+            background: #28a745;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+        
+        .logout-btn {
+            background: #ff4d4d;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+        
+        button:hover {
+            transform: scale(1.1);
+            transition: 0.3s ease-in-out;
+        }
+        
